@@ -1,0 +1,602 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katihar Engineering College</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .top-bar a {
+      margin-left: 15x;
+      text-decoration: none;
+      color: #000;
+      word-spacing: normal;
+      sentence-spacing: 5px;
+       margin-left: 15px;
+    }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;  
+  flex-direction: column;
+  min-height: 100vh;
+}
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-bottom: 2px solid #0073e6;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 80px; /* Medium logo size */
+      margin-right: 20px;
+    }
+    .logo h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #0073e6;
+    }
+    .logo p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+    
+
+    nav.topnav {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+    }
+    nav.topnav a {
+      color: #0073e6;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+    .social-icons i {
+      font-size: 18px;
+      color: #0073e6;
+    }
+    .search-bar input {
+      padding: 5px;
+      border-radius: 10px;
+      border: 1px solid #0073e6;
+        font-size: 14px;
+        width: 200px;
+        position: right;
+        margin: -12px;;
+        top: 5px;
+    }
+
+    /* Main navigation bar */
+    nav.mainnav {
+      background-color: hsl(246, 70%, 48%);
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    nav.mainnav ul {
+      list-style: none;
+      margin: ;
+      padding: 0;
+      display: flex;
+    }
+    nav.mainnav li {
+      position: relative;
+    }
+    nav.mainnav > ul > li {
+      margin: 0;
+    }
+    nav.mainnav a {
+      display: block;
+      padding: 12px 28px;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      white-space: 200px;
+      transition: background-color 0.3s;
+    }
+    nav.mainnav a:hover {
+      background-color: #005bb5;
+    }
+
+    /* Dropdown menu */
+    nav.mainnav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #0073e6;
+      min-width: 230px;
+      z-index: 1000;
+    }
+    nav.mainnav ul ul li {
+      width: 100%;
+    }
+    nav.mainnav ul ul a {
+      
+      padding: 10px 15px;
+      font-size: 14px;
+      border-bottom: 1px solid #005bb5;
+    }
+    nav.mainnav li:hover > ul {
+      display: block;
+    }
+    .new-badge{
+      background-color: hsla(0, 77%, 5%, 0.961);
+      color: #f90202;
+      font-size: 15px;
+      padding: 5px 5px ;
+      border-radius: 5px;
+      .link-list a{
+        text-decoration: none;
+        color: #4c0adb;
+        font-size: 14px;
+        display: inline-block;
+        margin-left: 10px;
+      }
+     
+    }
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+        }
+        
+    .container {
+  display: flex;
+  padding: 20px;
+  gap: 40px;
+  max-width: 120022px;
+  margin: auto;
+  flex-direction: row;   /* Desktop pe row */
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1; /* equal width for all columns */
+  display: flex;
+  flex-direction: column; /* andar ka content vertical */
+  gap: 15px;
+  max-width: 92%;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Mobile pe ek ke niche ek */
+  }
+  .column {
+    max-width: 100%; /* pura width le */
+  }
+}
+
+
+    
+
+.box {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.box-header {
+  background-color: #007BFF; /* blue heading */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 60px;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  box-sizing: border-box;
+}
+
+.box ul {
+  list-style: none;
+  padding-left: 20;
+  margin: 60;
+}
+
+.box ul li {
+  margin-bottom: 5px;
+}
+
+.box ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.box ul li a:hover {
+  text-decoration: underline;
+  color: #007BFF;
+}
+
+/* View All button style */
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.view-btn:hover {
+  background-color: #0056b3;
+}
+ /* Footer */
+    .footer {
+  position: relaive; /* Fixed hatao */
+  background-color: hwb(0 95% 5%);
+  border-top: 2px solid #007BFF;
+  padding: 30px 10px 50px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 16px; /* zoom me proper dikhne ke liye chhota */
+  overflow: hidden;
+  width: 100%; /* pura width le */
+  bottom: 20px; /* remove bottom */
+  flex-shrink: 0; /* footer shrink na ho */
+}
+  
+
+    .footer-section {
+      flex: 1;
+      padding: 0 10px;
+    }
+
+    /* LEFT SIDE : logo + info */
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .footer-left img {
+      width: 600px;   /* Logo size */
+      height: auto;
+    }
+
+    .college-info h3 {
+      margin: 0;
+      font-size: 28px;
+      color: hsl(240, 3%, 94%);
+    }
+
+    .college-info p {
+      margin: 2px 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* CENTER LINKS */
+    .footer-center ul {
+      list-style: none;
+      padding: 50;
+      margin: 0;
+      text-align: center;
+    }
+
+    .footer-center ul li {
+      margin-bottom: 5px;
+    }
+
+    .footer-center ul li a {
+      text-decoration: none;
+      color: #000408;
+    }
+
+    .footer-center ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* RIGHT COPYRIGHT */
+    .footer-right {
+      text-align: right;
+      color: hsl(0, 100%, 1%);
+    }
+
+    .footer-right p {
+      margin: 5px 0;
+    }
+
+    /* Blue Wave */
+    .wave {
+    position: absolute;
+    bottom: -320px; /* Push the wave further down */
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #0966c3;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    z-index: -100; /* Make sure wave is behind content */
+}
+  </style>
+</head>
+<body>
+    <div class="top-bar a" style="text-align: right ;background: #f0f0f0; padding: 5px 20px ; font-size: 14px;">
+   &raquo<a href="#">Home </a>
+      <a href="#">  &raquo Anti Ragging</a>
+      <a href="#">  &raquo RTI</a>
+       <a href="#">  &raquo AICTE</a>
+       <a href="#"> &raquo Kec Web Team</a>  
+</div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="KEC Logo">
+      <div>
+        <h1>Katihar Engineering College</h1>
+        <p>(Dept. of Science &amp; Technology, Govt. of Bihar)</p>
+      </div>
+    </div>
+
+    <nav class="topnav">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        
+      </div>
+      <div class="search-bar"><br>
+        <input type="text" placeholder="Search Faculty">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav class="mainnav">
+    <ul>
+      <li><a href="http://keck.ac.in/">Home</a></li>
+
+      <!-- About Us dropdown -->
+      <li>
+        <a href="#">About Us ▾</a>
+        <ul>
+          <li><a href="http://keck.ac.in/about/history">History</a></li>
+          <li><a href="http://keck.ac.in/about/administration">Administration</a></li>
+          <li><a href="http://keck.ac.in/about/principal-message">Principal Message</a></li>
+          <li><a href="http://keck.ac.in/about/vision-mission">Vision and Mission</a></li>
+          <li><a href="http://keck.ac.in/about/affiliation">Affiliation</a></li>
+          <li><a href="http://keck.ac.in/about/allotment-surrender">Allotment &amp; Surrender Report</a></li>
+        </ul>
+      </li>
+
+      <!-- Academic dropdown -->
+      <li>
+        <a href="#">Academic ▾</a>
+        <ul>
+          <li><a href="#">Admission</a></li>
+          <li><a href="#">Academic Regulations</a></li>
+          <li><a href="#">Academic Calendar</a></li>
+          <li><a href="#">Computer Labs Centre</a></li>
+          <li><a href="#">List of Holidays</a></li>
+          <li><a href="#">Attandance</a></li>
+          <li><a href="#">Syllabus</a></li>
+          <li><a href="#">Disciplinary Rules</a></li>
+          <li><a href="#">Online Fee Payment Tutorial</a></li>
+          <li><a href="#">Anti Ragging</a></li>
+          <li><a href="#">Notice from Government</a></li>
+        </ul>
+      </li>
+
+      <!-- Departments dropdown -->
+      <li>
+        <a href="#">Departments ▾</a>
+        <ul>
+          <li><strong style="color:#fff;padding:5px 15px;display:block;">Under Graduate</strong></li>
+          <li><a href="#">Civil Engineering</a></li>
+          <li><a href="#">Mechanical Engineering</a></li>
+          <li><a href="#">Computer Science & Engineering</a></li>
+          <li><a href="#">Electrical Engineering</a></li>
+          <li><a href="#">Applied Sc. & Humanities</a></li>
+          <li><a href="#">Food Processing</a></li>
+          <li><strong style="color:#fff;padding:5px 15px;display:block;">Post Graduate</strong></li>
+          <li><a href="#">Electronics Engg. (VLSI Design & Technology)</a></li>
+          <li><a href="#">Manufacturing Engineering</a></li>
+        </ul>
+      </li>
+
+      <!-- Facilities dropdown -->
+      <li>
+        <a href="#">Facilities ▾</a>
+        <ul>
+          <li><a href="#">Bank</a></li>
+          <li><a href="#">Central Library</a></li>
+          <li><a href="#">Computer Centre</a></li>
+          <li><a href="#">Club</a></li>
+          <li><a href="#">Guest Home</a></li>
+          <li><a href="#">Gymnasium</a></li>
+          <li><a href="#">Health Care</a></li>
+          <li><a href="#">Hostel</a></li>
+          <li><a href="#">Medical Facilities</a></li>
+          <li><a href="#">Placement</a></li>
+          <li><a href="#">Sports Facilities</a></li>
+          <li><a href="#">Startup Cell</a></li>
+          <li><a href="#">Useful Links</a></li>
+          <li><a href="#">WiFi</a></li>
+        </ul>
+      </li>
+
+      <!-- Training & Placement dropdown -->
+      <li>
+        <a href="#">Training & Placement ▾</a>
+        <ul>
+          <li><a href="#">About Placement</a></li>
+          <li><a href="#">Placement Brochure</a></li>
+          <li><a href="#">Rules of Training & Placement</a></li>
+          <li><a href="#">Tips for Resume</a></li>
+          <li><a href="#">Placed Students</a></li>
+        </ul>
+      </li>
+
+      <!-- Approval dropdown -->
+      <li>
+        <a href="#">Approval ▾</a>
+        <ul>
+          <li><a href="#">AICTE Approval</a></li>
+          <li><a href="#">AKU Approval</a></li>
+          <li><a href="#">Grievance</a></li>
+          <li><a href="#">Mandatory Disclosure</a></li>
+        </ul>
+      </li>
+
+      <!-- RTI dropdown -->
+      <li>
+        <a href="#">RTI ▾</a>
+        <ul>
+          <li><a href="#">RTI Act 2005</a></li>
+          <li><a href="#">RTI Application</a></li>
+          <li><a href="#">RTI Status</a></li>
+          <li><a href="#">Public Information Cell</a></li>
+        </ul>
+      </li>
+
+      <!-- Gallery dropdown -->
+      <li>
+        <a href="#">Gallery ▾</a>
+        <ul>
+          <li><a href="#">Photo Gallery</a></li>
+          <li><a href="#">Media Gallery</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Downloads</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="link-list" style="padding: 10px 20px; background-color: #f9f9f9;" >
+      
+    <marquee behavior="scroll" direction="left" style="background-color: #f0f0f0; padding: 10px 10px; color: #0073e6; font-weight: bold;" onmouseover="this.stop();" onmouseout="this.start();"  >
+       <span class="new-badge">NEW </span><a href="https://www.youtube.com/watch?v=cYMNEnq52p8">Video for EVC AICTE</a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+       <span class="new-badge">NEW </span><a href="https://tpo.keckatihar.in/f">Placement Portal of Katihar Engineering College</a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      <span class="new-badge">NEW </span><a href="https://www.aicte.gov.in/feedback/">Click here to give FEEDBACK TO AICTE</a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      </marquee>
+  </main>
+<main style="flex: 1;">
+    
+<div class="container">
+  <div class="column" padding: 10px; margin-right: 20px; >
+  <!-- Important Links -->
+  <div class="box">
+    <div class="box-header">IMPORTANT LINKS</div>
+    <ul>
+    <li>  &raquo <a href="#">Social Welfare Dept. Bihar</a></li>
+      <li>&raquo <a href="#">DST Bihar</a></li>
+      <li>&raquo <a href="#">Education Dept. Bihar</a></li>
+      <li>&raquo <a href="#">Govt. of Bihar</a></li>
+      <li>&raquo <a href="#">BCECEB</a></li>
+      <li>&raquo <a href="#">AKU, Patna</a></li>
+      <li>&raquo <a href="#">AICTE</a></li>
+      <li>&raquo <a href="#">Joint Entrance Examination</a></li>
+    </ul>
+  </div>
+</div>
+  <!-- Latest Notices -->
+    <div class="column">
+  <div class="box">
+    <div class="box-header">LATEST NOTICES</div>
+    <marquee behavior="scroll" direction="up" height="150px" onmouseover="this.stop();" onmouseout="this.start();">
+    <ul>
+      <li>2025-09-23 Notice <a href="#">Recruitment of Guest Assistant Professor</a></li>
+      <li>2025-09-20 Notice <a href="#">Admission Notification</a></li>
+      <li>2025-09-15 Notice <a href="#">Exam Schedule Released</a></li>
+    </ul>
+    </marquee>
+    <a href="#" class="view-btn">View All Notices</a>
+  </div>
+</div>
+  <!-- Latest Tenders -->
+   <div class="column">
+  <div class="box">
+    <div class="box-header">LATEST TENDERS</div>
+    <ul>
+      <li>2025-09-25 Tender <a href="#">Construction of College Building</a></li>
+      <li>2025-09-18 Tender <a href="#">Supply of Laboratory Equipment</a></li>
+      <li>2025-09-10 Tender <a href="#">IT Infrastructure Upgrade</a></li>
+    </ul>
+    <a href="#" class="view-btn">View All Tenders</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <!-- LEFT SIDE (Logo + Info) -->
+    <div class="footer-section footer-left">
+      <img src="logo.png" alt="College Logo">
+      <div class="college-info">
+        <h3>KEC Katihar</h3>
+        <p>Katihar Engineering College, Katihar</p>
+        <p>Habibpur, 854108, Bihar, India</p>
+        <p>Ph: 06452-239922</p>
+      </div>
+    </div>
+
+    <!-- CENTER LINKS -->
+    <div class="footer-section footer-center">
+      <ul>
+        <li><a href="#">&raquo Contact Us</a></li>
+        <li><a href="#"> &raquo Privacy Policy</a></li>
+        <li><a href="#">&raquo Product and Services</a></li>
+        <li><a href="#"> &raquo Terms and Conditions</a></li>
+        <li><a href="#">&raquo  Refund/Cancellation Policy</a></li>
+        <li><a href="#">&raquo  Fee Structure</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT COPYRIGHT -->
+    <div class="footer-section footer-right">
+      <p>&copy; 2018 KEC Katihar</p>
+      <p>Designed & Developed by <strong>KEC Web Team</strong></p>
+      <p>Since January 2019</p>
+    </div>
+
+
+    <!-- BLUE WAVE -->
+    <div class="wave"></div>
+  </div>
+
+     
+</body>
+</html>
